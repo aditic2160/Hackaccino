@@ -1,5 +1,5 @@
 # Hackaccino
-markdownCopy# Interactive Solar System in A-Frame
+Interactive Solar System in A-Frame
 
 This project is an interactive 3D solar system created using A-Frame. It allows users to explore a visually rich representation of our solar system in their web browser.
 
