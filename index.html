@@ -58,19 +58,17 @@
 <body>
     <a-scene>
         <a-assets>
-            <img id="galaxy" src="https://cdn.glitch.com/d5e54463-4615-4548-9212-9d4548c77d2d%2Fmilky-way-1654768_1920.jpg?v=1625697186087" />
+            <img id="starTexture" src="https://cdn.glitch.com/d5e54463-4615-4548-9212-9d4548c77d2d%2Fstars.jpg?v=1625697186087" />
         </a-assets>
 
         <a-entity id="rig" position="0 10 50">
             <a-camera look-controls wasd-controls></a-camera>
         </a-entity>
 
-        <!-- Sun -->
         <a-sphere id="sun" position="0 0 0" radius="5" color="yellow" material="emissive: yellow; emissiveIntensity: 0.5" info-panel>
             <a-particle-system color="#FFA500,#FF4500" preset="dust" particle-count="5000" scale="2"></a-particle-system>
         </a-sphere>
 
-        <!-- Planets -->
         <a-entity id="mercury" planet-orbit="distance: 10; speed: 4.74" info-panel>
             <a-sphere radius="0.5" material="roughness: 1; metalness: 0.2; color: #A9A9A9" rotate="speed: 0.017"></a-sphere>
         </a-entity>
@@ -111,22 +109,17 @@
             <a-particle-system color="#4169E1" preset="dust" particle-count="1000"></a-particle-system>
         </a-entity>
 
-        <!-- Info Panel -->
         <a-entity id="infoPanel" position="0 25 -20" visible="false">
             <a-plane width="30" height="10" color="black" opacity="0.8"></a-plane>
             <a-text id="infoText" value="" align="center" width="28" position="0 0 0.1" color="white"></a-text>
         </a-entity>
 
-        <!-- Galaxy background -->
-        <a-sky src="#galaxy"></a-sky>
+        <a-sky src="#starTexture"></a-sky>
 
-        <!-- Ambient light -->
         <a-light type="ambient" color="#888"></a-light>
 
-        <!-- Directional light -->
         <a-light type="directional" position="0 0 0" rotation="-90 0 0" intensity="0.5"></a-light>
 
-        <!-- Particle system for stars -->
         <a-entity position="0 0 0" particle-system="preset: default; particleCount: 5000; maxAge: 5; velocity: 0.1; color: #FFFFFF,#FFFF00"></a-entity>
     </a-scene>
 </body>
