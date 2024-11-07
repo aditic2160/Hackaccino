@@ -23,19 +23,19 @@ To get this project running locally on your computer, follow these steps:
 
 3. Navigate to the project folder:
 cd path/to/your/project/folder
-CopyReplace `path/to/your/project/folder` with the actual path where you saved the `index.html` file.
+Replace `path/to/your/project/folder` with the actual path where you saved the `index.html` file.
 
 4. Install a simple HTTP server:
 npm install -g http-server
-CopyThis command installs the `http-server` package globally on your system.
+This command installs the `http-server` package globally on your system.
 
 5. Start the server:
 http-server
-CopyThis command starts a local web server.
+This command starts a local web server.
 
 6. Open your web browser and go to:
 http://localhost:8080
-CopyYou should now see the interactive solar system in your browser!
+You should now see the interactive solar system in your browser!
 
 ## Using the Solar System
 
